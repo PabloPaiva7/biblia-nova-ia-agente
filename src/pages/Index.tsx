@@ -1,3 +1,4 @@
+
 import { Header } from "@/components/Header";
 import { BibleSearch } from "@/components/BibleSearch";
 import { DevotionalGenerator } from "@/components/DevotionalGenerator";
@@ -7,8 +8,10 @@ import { InteractiveBibleStudy } from "@/components/InteractiveBibleStudy";
 import { ScriptureMemorization } from "@/components/ScriptureMemorization";
 import { ChristianQA } from "@/components/ChristianQA";
 import { TheologicalExplanation } from "@/components/TheologicalExplanation";
+import { ExegeseAnalise } from "@/components/ExegeseAnalise";
+import { CentralConteudos } from "@/components/CentralConteudos";
 import { Footer } from "@/components/Footer";
-import { Book, BookOpen, Bot, CalendarDays, MessageSquare, BookText, Brain, HelpCircle, ScrollText } from "lucide-react";
+import { Book, BookOpen, Bot, CalendarDays, MessageSquare, BookText, Brain, HelpCircle, ScrollText, FileText, Library } from "lucide-react";
 
 const Index = () => {
   return (
@@ -59,6 +62,14 @@ const Index = () => {
                 <ScrollText size={20} />
                 <span>Explicações teológicas</span>
               </div>
+              <div className="flex items-center gap-2 text-blue-800">
+                <FileText size={20} />
+                <span>Exegese profunda</span>
+              </div>
+              <div className="flex items-center gap-2 text-purple-700">
+                <Library size={20} />
+                <span>Central de conteúdos</span>
+              </div>
             </div>
           </div>
           
@@ -72,6 +83,8 @@ const Index = () => {
             <ScriptureMemorization />
             <ChristianQA />
             <TheologicalExplanation />
+            <ExegeseAnalise />
+            <CentralConteudos />
           </div>
         </div>
       </main>
