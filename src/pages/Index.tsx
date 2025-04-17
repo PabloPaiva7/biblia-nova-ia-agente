@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Header";
 import { BibleSearch } from "@/components/BibleSearch";
 import { DevotionalGenerator } from "@/components/DevotionalGenerator";
@@ -9,7 +8,7 @@ import { ScriptureMemorization } from "@/components/ScriptureMemorization";
 import { ChristianQA } from "@/components/ChristianQA";
 import { TheologicalExplanation } from "@/components/TheologicalExplanation";
 import { Footer } from "@/components/Footer";
-import { Book, BookOpen, Bot, CalendarDays, MessageSquare, BookText, Brain, QuestionMark, ScrollText } from "lucide-react";
+import { Book, BookOpen, Bot, CalendarDays, MessageSquare, BookText, Brain, HelpCircle, ScrollText } from "lucide-react";
 
 const Index = () => {
   return (
@@ -53,7 +52,7 @@ const Index = () => {
                 <span>Memorização</span>
               </div>
               <div className="flex items-center gap-2 text-red-600">
-                <QuestionMark size={20} />
+                <HelpCircle size={20} />
                 <span>Atendimento cristão</span>
               </div>
               <div className="flex items-center gap-2 text-teal-600">

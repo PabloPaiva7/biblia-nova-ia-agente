@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { QuestionMark, MessageCircle, Send } from "lucide-react";
+import { HelpCircle, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -102,7 +101,7 @@ export function ChristianQA() {
       {!answers.length && (
         <div className="mt-6">
           <Alert>
-            <QuestionMark className="h-4 w-4" />
+            <HelpCircle className="h-4 w-4" />
             <AlertDescription>
               <span className="font-medium block mb-2">Exemplos de perguntas:</span>
               <ul className="list-disc pl-5 space-y-1">
