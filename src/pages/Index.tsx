@@ -4,8 +4,10 @@ import { BibleSearch } from "@/components/BibleSearch";
 import { DevotionalGenerator } from "@/components/DevotionalGenerator";
 import { BibleReadingPlan } from "@/components/BibleReadingPlan";
 import { SermonAssistant } from "@/components/SermonAssistant";
+import { InteractiveBibleStudy } from "@/components/InteractiveBibleStudy";
+import { ScriptureMemorization } from "@/components/ScriptureMemorization";
 import { Footer } from "@/components/Footer";
-import { Book, BookOpen, Bot, CalendarDays, MessageSquare } from "lucide-react";
+import { Book, BookOpen, Bot, CalendarDays, MessageSquare, BookText, Brain } from "lucide-react";
 
 const Index = () => {
   return (
@@ -40,6 +42,14 @@ const Index = () => {
                 <MessageSquare size={20} />
                 <span>Assistente de sermão</span>
               </div>
+              <div className="flex items-center gap-2 text-blue-600">
+                <BookText size={20} />
+                <span>Estudo interativo</span>
+              </div>
+              <div className="flex items-center gap-2 text-purple-600">
+                <Brain size={20} />
+                <span>Memorização</span>
+              </div>
             </div>
           </div>
           
@@ -49,6 +59,8 @@ const Index = () => {
             <DevotionalGenerator />
             <BibleReadingPlan />
             <SermonAssistant />
+            <InteractiveBibleStudy />
+            <ScriptureMemorization />
           </div>
         </div>
       </main>
