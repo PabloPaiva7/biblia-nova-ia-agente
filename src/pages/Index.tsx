@@ -2,8 +2,10 @@
 import { Header } from "@/components/Header";
 import { BibleSearch } from "@/components/BibleSearch";
 import { DevotionalGenerator } from "@/components/DevotionalGenerator";
+import { BibleReadingPlan } from "@/components/BibleReadingPlan";
+import { SermonAssistant } from "@/components/SermonAssistant";
 import { Footer } from "@/components/Footer";
-import { Book, BookOpen, Bot } from "lucide-react";
+import { Book, BookOpen, Bot, CalendarDays, MessageSquare } from "lucide-react";
 
 const Index = () => {
   return (
@@ -11,7 +13,7 @@ const Index = () => {
       <Header />
       
       <main className="flex-1 container mx-auto px-4 py-8">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-10">
             <div className="flex justify-center">
@@ -21,7 +23,7 @@ const Index = () => {
             <p className="text-xl text-gray-600 mt-2">
               Seu agente virtual para estudos bíblicos e crescimento espiritual
             </p>
-            <div className="flex justify-center gap-4 mt-6">
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
               <div className="flex items-center gap-2 text-blue-700">
                 <BookOpen size={20} />
                 <span>Pesquisa inteligente</span>
@@ -30,6 +32,14 @@ const Index = () => {
                 <Book size={20} />
                 <span>Devocionais personalizados</span>
               </div>
+              <div className="flex items-center gap-2 text-green-600">
+                <CalendarDays size={20} />
+                <span>Planos de leitura</span>
+              </div>
+              <div className="flex items-center gap-2 text-amber-700">
+                <MessageSquare size={20} />
+                <span>Assistente de sermão</span>
+              </div>
             </div>
           </div>
           
@@ -37,6 +47,8 @@ const Index = () => {
           <div className="space-y-10">
             <BibleSearch />
             <DevotionalGenerator />
+            <BibleReadingPlan />
+            <SermonAssistant />
           </div>
         </div>
       </main>
