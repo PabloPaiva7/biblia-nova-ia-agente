@@ -1,14 +1,17 @@
+
 import { useState } from "react";
 import { HelpCircle, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useToast } from "@/hooks/use-toast";
 
 export function ChristianQA() {
   const [question, setQuestion] = useState("");
   const [answers, setAnswers] = useState<Array<{ question: string; answer: string }>>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,6 +30,11 @@ export function ChristianQA() {
       }]);
       setQuestion("");
       setIsSubmitting(false);
+      
+      toast({
+        title: "Resposta recebida",
+        description: "Sua pergunta foi respondida com base em princípios bíblicos.",
+      });
     }, 1500);
   };
 
