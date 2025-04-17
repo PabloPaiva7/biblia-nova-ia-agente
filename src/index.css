@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,5 +99,15 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+
+  .verse-text {
+    font-family: 'Lora', serif;
+    font-style: italic;
   }
 }
